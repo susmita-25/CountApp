@@ -20,3 +20,36 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #d6d6d6;
 }
+
+/* Dark Mode Styles */
+.dark {
+  background-color: #000; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+/* Light Mode Styles */
+.light {
+  background-color: #fff; /* Light background color */
+  color: #000; /* Dark text color */
+}
+
+/* Style for the button */
+.button-style {
+  background-color: blue; /* Change to the desired background color */
+  color: #fff; /* Change to the desired text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners if desired */
+  transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+}
+
+/* Style for the button when it's hovered over */
+.button-style:hover {
+  background-color: blue; /* Change to the desired hover background color */
+}
+
+.input {
+  border: blue 2px solid;
+  color: black;
+}
