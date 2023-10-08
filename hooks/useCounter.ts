@@ -1,24 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useCookies } from 'react-cookie';
+import { useState } from 'react';
 
-const useCounter = () => {
-  const [counter, setCounter] = useState(0);
-  const [cookies, setCookie] = useCookies(['counter']);
+const useCounter = (initialValue:number = 0) => {
+  const [counter, setCounter] = useState(initialValue);
 
-  useEffect(() => {
-    if (cookies.counter) {
-      setCounter(parseInt(cookies.counter));
-    }
-  }, []);
-
-  const increment = (value = 1) => {
-    setCounter((prevCounter) => prevCounter + value);
-    setCookie('counter', counter + value, { path: '/' });
+  const increment = (value:number = 1) => {
+    setCounter(counter + value);
   };
 
-  const decrement = (value = 1) => {
-    setCounter((prevCounter) => prevCounter - value);
-    setCookie('counter', counter - value, { path: '/' });
+  const decrement = (value:number = 1) => {
+    setCounter(counter - value);
   };
 
   return { counter, increment, decrement };

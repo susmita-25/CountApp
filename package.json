@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "next": "latest",
@@ -16,12 +17,15 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "jest": "^29.7.0",
     "postcss": "latest",
     "tailwindcss": "latest",
+    "ts-jest": "^29.1.1",
     "typescript": "latest"
   }
 }

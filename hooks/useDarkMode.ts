@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useDarkMode = (initialState = false) => {
+const useDarkMode = (initialState:boolean = false) => {
   const [darkMode, setDarkMode] = useState(initialState);
 
   useEffect(() => {
